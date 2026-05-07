@@ -4,38 +4,22 @@
 <main>
     <section>
         <h2>¿Cuál es tu nombre?</h2>
-    <form action ='@Url.Action("Index", "Home")' method="get">
+    <form action ='@Url.Action("Esapto", "Home")' method="get">
     <input type="text" name = "nombre" placeholder="Escribe tu nombre">
-    <input type="submit" value="Enviar">
-    </form>
         <h2>¿Cuál es tu edad?</h2>
-    <form action ='@Url.Action("Index", "Home")' method="get">
     <input type="number" name = "edad" placeholder="Escribe tu edad">
-    <input type="submit" value="Enviar">
-    </form>
         <h2>¿Cual es tu DNI?</h2>
-    <form action ='@Url.Action("Index", "Home")' method="get">
     <input type="text" name = "dni" placeholder="Escribe tu DNI">
-    <input type="submit" value="Enviar">
-    </form> 
-    </section>
-    <section>
         <h2>¿Está trabajando?</h2>
-    <form action ='@Url.Action("Index", "Home")' method="get">
     <input type="radio" name = "estaTrabajando" value="true" checked> SI
     <input type="radio" name = "estaTrabajando" value="false"> NO
-    <input type="submit" value="Enviar">
-    </form>
-    </section>
-    <section>
     <h2>¿Tipo de empleo?</h2>
-    <form action ='@Url.Action("Index", "Home")' method="get">
      <select name="tipoEmpleo">
         <option value="relacion de dependencia">Relación de dependencia</option>
         <option value="desempleado">Desempleado</option>
         <option value="monotribuista">Monotributista</option>
         <option value="autonomo">Autónomo</option>
-    </select>
+     </select>
     <h2>ingreso mensual?</h2>
     <input type="number" name = "ingresoMensual" placeholder="Escribe tu ingreso mensual">
     <h2>Posee deudas?</h2>
@@ -45,6 +29,7 @@
     <input type="checkbox" name = "origenDeudas" value="banco"> Prestamo Bancario
     <input type="checkbox" name = "origenDeudas" value="tarjetaCredito"> Tarjeta de Credito
     <input type="checkbox" name = "origenDeudas" value="informal"> Prestamo Informal
+    <input type ="checkbox" name = "origenDeudas" value = "no "> no tiene deudas
     <h2>monto solicidado?</h2>
     <input type="number" name = "montoSolicitado" placeholder="Escribe el monto solicitado">
     <h2>plazo de devolucion?</h2>
